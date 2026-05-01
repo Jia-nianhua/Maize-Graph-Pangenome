@@ -123,8 +123,25 @@ awk 'NR==FNR { pc[$2]=$3" "$4" "$5; next } { print 1, pc[$2] }' pca.eigenvec PLI
 gemma -bfile SNP -gk 2 -p multi_trait.gemma.pheno
 gemma -bfile SNP -k output/result.sXX.txt -lmm 2 -p multi_trait.gemma.pheno -c covariates.txt -n 1
 ```
-![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
+## Additional resources for pangenome construction
 
+In addition, if you would like to construct your own pangenome from scratch, we provide a collection of scripts in the `pangenome_scripts` directory.
+
+### Module overview
+
+| Module | Description |
+|--------|------------|
+| **01.GenomeAssessment** | Genome quality assessment, including LAI and BUSCO analyses |
+| **02.OrthologIdentification** | Identification of orthologous gene groups (OGGs) |
+| **03.SVCalling** | Structural variant detection using whole-genome alignment (MUMmer + SyRI) |
+| **04.GraphConstruction** | Scripts for graph-based pangenome construction |
+| **05.RNA-seqanalysis** | RNA-seq analysis pipeline for expression quantification |
+| **06.ATAC-seqanalysis** | ATAC-seq analysis pipeline for peak detection |
+| **07.panNLR** | NLR gene annotation and downstream analyses |
+| **08.heritability_estimation** | Heritability estimation using LDAK |
+
+Together, these modules provide a complete workflow from genome assembly evaluation to functional and quantitative analyses within a pangenome framework.
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
 If you have any questions, feel free to contact me. For more data resources, please visit [maizepan.cn](http://maizepan.cn)
 
 Please cite the following if you use MaizeGP, the portal, or downloaded datasets in your work:
