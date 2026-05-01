@@ -11,9 +11,8 @@ This tutorial provides example scripts for downstream analyses using MaizeGP dat
 The following tools are required:
 
 - Graph-based analysis
-  - `vg` (>=1.40)
+  - `vg` 
   - `minigraph`
-  - `k8` (for mgutils scripts)
 - Variant processing
   - `bcftools`
   - `samtools`
