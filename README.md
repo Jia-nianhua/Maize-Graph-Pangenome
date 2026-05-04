@@ -109,6 +109,7 @@ The filter in the last step retains sites with < 20% missing genotypes and minor
 
 **Output:** A population-level filtered VCF (`maizegp.population.sv.filtered.vcf.gz`) ready for downstream association or population-genetic analyses, and a genotype matrix (`maizegp.population.sv.genotype.txt`) for custom processing.
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/1.png)
 ---
 
 ## 3. SV genotyping of new assemblies using the graph pangenome
