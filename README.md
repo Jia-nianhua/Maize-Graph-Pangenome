@@ -127,6 +127,7 @@ paste *.bed | ./k8 mgutils.js merge -s <(./agc listset maizepan) - | gzip > maiz
 
 **Output:** A BED file describing SVs for each assembly (first command), which can be merged across assemblies into a multi-sample VCF (subsequent commands using k8/mgutils helpers).
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/2.png)
 ---
 
 ## 4. Adding a new assembly to the MaizeGP graph
@@ -145,6 +146,7 @@ minigraph -cxggs -t 16 48pan.gfa NEW.fa > NEW.gfa
 
 **Output:** An augmented GFA graph (`NEW.gfa`) that includes the new assembly. This graph can then be used for all downstream analyses described in Section 2&3.
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/3.png)
 ---
 
 ## 5. SV genotyping using the 48-pan SV catalog
@@ -169,7 +171,9 @@ bcftools index -c maizegp.population.sv.vcf.gz
 ```
 
 `idxdepth` computes per-locus depth statistics from the BAM file; `multigrmpy.py` then performs localized read reassembly and genotype likelihood calculation at each SV site. The final merge step combines all individual VCFs into a population-level genotype matrix.
+**Output:** A multi-sample SV genotype VCF (`maizegp.population.sv.vcf.gz`) ready for downstream association (Section 8)
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/4.png)
 ---
 
 ## 6. Merging and extending the SV catalog with user-provided SV calls
@@ -199,6 +203,7 @@ SURVIVOR merge merged_sv.list 1000 2 1 1 1 50 merged_sv_catalog.vcf
 
 **Output:** A nonredundant merged SV catalog (`merged_sv_catalog.vcf`) that combines the MaizeGP panel with your own SV calls. Use this as the input VCF (`-i`) in Section 5 to genotype the expanded panel.
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/5.png)
 ---
 
 ## 7. TE annotation of genome assemblies using the 48-pan-TE library
@@ -218,6 +223,7 @@ Key parameters: `-e rmblast` selects the RMBlast search engine, `-pa 60` uses 60
 
 **Output:** RepeatMasker produces a `.out` annotation file, a `.tbl` summary table, and a `.masked` FASTA with TE bases replaced by Ns. The `.out` file is the primary result for downstream interpretation.
 
+<img src="https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/6.png" width="50%">
 ---
 
 ## 8. SV-based GWAS
@@ -242,6 +248,7 @@ The first `gemma` command (`-gk 2`) computes a standardized relatedness matrix (
 
 **Output:** GEMMA writes association statistics (effect sizes, standard errors, p-values) to a results directory under `output/`. Manhattan and Q-Q plots can be generated from these outputs using R packages such as `qqman`.
 
+<img src="https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/7.png" width="50%">
 ---
 
 ## 9. Supplementary scripts for de novo pangenome construction
