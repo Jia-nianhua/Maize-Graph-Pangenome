@@ -8,6 +8,8 @@ MaizeGP 1.0 is a graph-based pangenome resource constructed from 48 diverse maiz
 
 These examples are designed as a starting point for applying MaizeGP to user-specific research questions. All code blocks are ready to run with minimal modification.
 
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
+
 **Key resources**
 
 - **MaizeGP Portal:** An interactive web platform for locus-level graph exploration and data download — visit https://www.maizepan.cn. The portal enables users to browse bubble-resolved SVs, inspect genome-specific paths through the graph, and download versioned datasets without command-line setup.
@@ -270,7 +272,6 @@ In addition to the downstream analysis tutorials above, the complete pipeline fo
 
 > **Note:** The graph files, SV catalogs, and TE libraries themselves are too large for GitHub hosting. Download these from the [MaizeGP Portal](https://www.maizepan.cn) Data Downloads module.
 
-![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
 If you have any questions, feel free to contact me. For more data resources, please visit [maizepan.cn](http://maizepan.cn)
 
 Please cite the following if you use MaizeGP, the portal, or downloaded datasets in your work:
