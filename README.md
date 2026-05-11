@@ -67,7 +67,7 @@ This section describes how to use the MaizeGP graph (`48pan.gfa.gz`) to genotype
 
 ```
 mkdir -p index gam pack vcf
-vg autoindex --workflow giraffe --gfa graph/48pan.gfa.gz --prefix index/maizegp_48pan --threads 32
+vg autoindex --workflow giraffe --gfa graph/48pan.gfa --prefix index/maizegp_48pan --threads 32
 vg snarls index/maizegp_48pan.xg > index/maizegp_48pan.snarls
 ```
 
