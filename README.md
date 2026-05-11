@@ -8,7 +8,7 @@ MaizeGP 1.0 is a graph-based pangenome resource constructed from 48 diverse maiz
 
 These examples are designed as a starting point for applying MaizeGP to user-specific research questions. All code blocks are ready to run with minimal modification.
 
-![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.png)
 
 **Key resources**
 
