@@ -276,4 +276,4 @@ If you have any questions, feel free to contact me. For more data resources, ple
 
 Please cite the following if you use MaizeGP, the portal, or downloaded datasets in your work:
 
-*MaizeGP: A Platform of Graph-Based Pangenome Facilitating High-Resolution Structural Variation Exploration and Explicit Trait Association in Maize.* (submitted)
+*MaizeGP: An open graph-based maize pangenome platform for high-resolution, multi-scale exploration of structural variation.* (submitted)
