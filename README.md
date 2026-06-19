@@ -61,7 +61,7 @@ This section describes how to use the MaizeGP graph (`48pan.gfa.gz`) to genotype
 
 - The graph file `48pan.gfa.gz` from MaizeGP
 - Paired-end short reads for each sample (FASTQ format, gzipped)
-- Sufficient memory (≥ 20 GB recommended) and threads for large cohorts
+- Sufficient memory (≥ 400 GB recommended) and threads for large cohorts
 
 **Stage 1: Build graph indices**
 
