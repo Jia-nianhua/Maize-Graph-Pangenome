@@ -8,7 +8,7 @@ MaizeGP 1.0 is a graph-based pangenome resource constructed from 48 diverse maiz
 
 These examples are designed as a starting point for applying MaizeGP to user-specific research questions. All code blocks are ready to run with minimal modification.
 
-![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.png)
+![Main Figure](https://github.com/Jnhcau/Maize-Graph-Pangenome/blob/main/image/mainFig.jpg)
 
 **Key resources**
 
@@ -276,4 +276,4 @@ If you have any questions, feel free to contact me. For more data resources, ple
 
 Please cite the following if you use MaizeGP, the portal, or downloaded datasets in your work:
 
-*MaizeGP: An open graph-based maize pangenome platform for high-resolution, multi-scale exploration of structural variation.* (submitted,2026)
+Jia, N., Kuang, X., Wang, Y., Song, W., Du, Y., Guo, Y., Guo, Y., Yi, C., Ma, Z., Chen, S., Fu, J. and Liu, W. (2026), MaizeGP: An open graph-based maize pangenome platform for integrative multi-scale exploration of structural variation. J. Integr. Plant Biol.. https://doi.org/10.1111/jipb.70439
